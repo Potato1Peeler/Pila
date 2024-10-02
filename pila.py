@@ -21,18 +21,18 @@ class Pila:
         self.graficar()
     
     def graficar(self):
-        plt.clf()  # Limpiar la figura para actualizarla
+        plt.clf()  
         plt.bar(range(len(self.items)), self.items, color='blue')
         plt.xlabel('Índice')
         plt.ylabel('Valor')
         plt.title('Estado actual de la pila')
-        plt.pause(0.5)  # Pausa para mostrar el gráfico
+        plt.pause(0.5) 
 
 def main():
     pila = Pila()
-    plt.ion()  # Activar modo interactivo para gráficos dinámicos
+    plt.ion()  
     
-    # Operaciones con la pila
+  
     pila.apilar(5)
     pila.apilar(10)
     pila.apilar(15)
@@ -42,8 +42,8 @@ def main():
     pila.desapilar()
     pila.desapilar()
 
-    plt.ioff()  # Desactivar modo interactivo
-    plt.show()  # Mantener el último gráfico visible
+    plt.ioff()  
+    plt.show()  
 
 if __name__ == "__main__":
     main()
